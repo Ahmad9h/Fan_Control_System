@@ -1,4 +1,4 @@
-"# Fan Control System" 
+# Fan Control System 
 
 - 💡 The fan turns on or off automatically based on temperature.
 
@@ -14,4 +14,4 @@
  - 🌬️ 90-119°C   : Fan operates at 75% speed.
  - 🌬️ Above 120°C: Fan operates at full speed.
 
-"## note": there is a protues version and an Eta32_mini version
+## note: there is a protues version and an Eta32_mini version
