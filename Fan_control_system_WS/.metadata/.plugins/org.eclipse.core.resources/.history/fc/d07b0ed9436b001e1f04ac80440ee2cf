@@ -1,0 +1,35 @@
+/*****************************************************************************
+ *
+ * potentiometer.h
+ *
+ *  Created on: Oct 14, 2023
+ *
+ *  Author: Ahmad Hamdy
+ *
+ *****************************************************************************/
+
+#ifndef POTENTIOMETER
+#define POTENTIOMETER
+
+#include "std_types.h"
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+
+#define SENSOR_CHANNEL_ID         7
+#define SENSOR_MAX_VOLT_VALUE     5
+#define SENSOR_MAX_Value    10000
+
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+
+/*
+ * Description :
+ * Function responsible for calculate the temperature from the ADC digital value.
+ */
+uint8 potentiometer_getValue(void);
+
+
+#endif /* POTENTIOMETER */

@@ -1,0 +1,1103 @@
+11:57:01 **** Build of configuration Debug for project FCS ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: FCS.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS.map -mmcu=atmega32 -o "FCS.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS.elf  >"FCS.lss"
+Finished building: FCS.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:57:03 **** Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:04:04 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:04:04 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:05:42 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:05:43 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:30:11 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:30:11 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:34:30 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building target: FCS.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS.map -mmcu=atmega32 -o "FCS.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS.elf  >"FCS.lss"
+Finished building: FCS.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:34:30 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11944 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:34:55 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:34:55 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11944 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:38:19 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:38:20 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11944 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:39:05 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:39:05 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11944 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:39:15 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:39:15 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+../motor.c: In function 'DcMotor_Init':
+../motor.c:16: error: 'DC_MOTOR_PIN2' undeclared (first use in this function)
+../motor.c:16: error: (Each undeclared identifier is reported only once
+../motor.c:16: error: for each function it appears in.)
+../motor.c: In function 'DcMotor_Rotate':
+../motor.c:25: error: 'DC_MOTOR_PIN2' undeclared (first use in this function)
+make: *** [motor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:39:24 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:39:25 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:11:00 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:11:00 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building file: ../potentiometer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"potentiometer.d" -MT"potentiometer.o" -c -o "potentiometer.o" "../potentiometer.c"
+Finished building: ../potentiometer.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./potentiometer.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12132 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:11:48 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:11:48 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../potentiometer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"potentiometer.d" -MT"potentiometer.o" -c -o "potentiometer.o" "../potentiometer.c"
+Finished building: ../potentiometer.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./potentiometer.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12136 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:27:40 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:27:41 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:40:14 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:40:14 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11018 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:44:59 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:44:59 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11018 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:46:45 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:46:45 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11018 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:52:13 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:52:13 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: FCS_Eta32_Mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FCS_Eta32_Mini.map -mmcu=atmega32 -o "FCS_Eta32_Mini.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./motor.o ./pwm.o   
+Finished building target: FCS_Eta32_Mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FCS_Eta32_Mini.elf  >"FCS_Eta32_Mini.lss"
+Finished building: FCS_Eta32_Mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FCS_Eta32_Mini.elf  "FCS_Eta32_Mini.hex"
+Finished building: FCS_Eta32_Mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:09:43 **** Incremental Build of configuration Debug for project FCS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9342 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:09:43 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

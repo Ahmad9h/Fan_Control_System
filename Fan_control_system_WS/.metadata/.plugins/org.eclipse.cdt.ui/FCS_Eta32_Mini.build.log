@@ -1,0 +1,20 @@
+14:09:43 **** Incremental Build of configuration Debug for project FCS_Eta32_Mini ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FCS_Eta32_Mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11994 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:        292 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:09:43 Build Finished. 0 errors, 0 warnings. (took 146ms)
+

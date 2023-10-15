@@ -1,0 +1,32 @@
+/*****************************************************************************
+ *
+ * potentiometer.c
+ *
+ *  Created on: Oct 14, 2023
+ *
+ *  Author: Ahmad Hamdy
+ *
+ *****************************************************************************/
+
+#include "potentiometer.h"
+#include "adc.h"
+
+/*
+ * Description :
+ * Function responsible for calculate the potentiometer from the ADC digital value.
+ */
+uint8 potentiometer_getValue(void)
+{
+	uint8 potentiometer_value = 0;
+
+	uint16 adc_value = 0;
+
+	/* Read ADC channel where the temperature sensor is connected */
+	adc_value = ADC_readChannel(SENSOR_CHANNEL_ID);
+
+	/* Calculate the temperature from the ADC value*/
+	potentiometer_value = (uint8)(((uint32)adc_value*SENSOR_MAX_Value*ADC_REF_VOLT_VALUE)/(ADC_MAXIMUM_VALUE*SENSOR_MAX_VOLT_VALUE));
+
+	return potentiometer_value;
+}
+
